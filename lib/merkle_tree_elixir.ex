@@ -71,7 +71,6 @@ defmodule MerkleTreeElixir do
     {_, left_hash, _, _} = tree.left_child
     {_, right_hash, _, _} = tree.right_child
 
-    #index = index + 1
     new_index = leaf_index_in_subtree(tree.depth, index)
 
     case part_of_left_subtree?(tree.depth, index) do
